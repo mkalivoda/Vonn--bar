@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihláška</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="dracek.jpg">
+
+
+
+<a href="index.html">Zpět na hlavní stránku</a>
+
+<form action="https://formsubmit.co/mkalivoda@spskt.cz" method="POST" enctype="multipart/form-data"> 
+    <label for="name">Název vůně:</label>
+     <input type="text" id="name" name="name" required> 
+     <label>Typ vůně:</label>
+     <input type="radio" name="pohlavi" value="samec"> Květinová
+     <input type="radio" name="pohlavi" value="samice"> Ovocná
+    <input type="radio" name="pohlavi" value="neutrum"> Dřevitá
+    <input type="radio" name="pohlavi" value="neutrum"> Experimentální
+     <label for="date">Datum vytvoření vůně:</label> <input type="date" id="date" name="date"> 
+     <label for="dech">Intenzita vůně:</label> 
+     <input type="range" id="dech" name="dech" min="0" max="10"> 
+     <label for="foto">Fotografie voňavky:</label> <input type="file" id="foto" name="foto"> 
+     <label for="color">Barva vůně:</label> <input type="color" id="color" name="color" value="#ff0000">
+        <label>Email:</label> <input type="email" placeholder="např. drak@hrad.cz" required> <label>Heslo:</label> 
+        <input type="password" required> <!-- TLAČÍTKA --> 
+        <div class="button-row"> <input type="submit" value="Odeslat přihlášku" class="btn-submit"> <input type="reset" value="Resetovat formulář" class="btn-reset"> </div> <br> </form> </body> </html>
